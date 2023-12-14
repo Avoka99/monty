@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *  * queue - sets the format of the data to a queue (FIFO)
- *   * @stack: double pointer to the head of the stack
- *    * @line_number: line number in the Monty byte code file
- *     */
+ * queue - sets the format of the data to a queue (FIFO)
+ * @stack: double pointer to the head of the stack
+ * @line_number: line number in the Monty byte code file
+ */
 void queue(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current = *stack, *temp;

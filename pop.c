@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *  * pop - removes the top element of the stack
- *   * @stack: double pointer to the head of the stack
- *    * @line_number: line number in the Monty byte code file
- *     */
+ * pop - removes the top element of the stack
+ * @stack: double pointer to the head of the stack
+ * @line_number: line number in the Monty byte code file
+ */
 void pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;

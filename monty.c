@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- *  * main - entry point for the Monty Bytecode Interpreter
- *   * @argc: argument count
- *    * @argv: argument vector
- *     *
- *      * Return: EXIT_SUCCESS on success, EXIT_FAILURE on failure
- *       */
+ * main - entry point for the Monty Bytecode Interpreter
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: EXIT_SUCCESS on success, EXIT_FAILURE on failure
+ */
 int main(int argc, char *argv[])
 {
 	FILE *file;
@@ -42,5 +42,5 @@ int main(int argc, char *argv[])
 	fclose(file);
 	free(line);
 	free_stack(stack);
-	return EXIT_SUCCESS;
+	return (EXIT_SUCCESS);
 }

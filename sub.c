@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *  * sub - subtracts the top element of the stack from the second top element
- *   * @stack: double pointer to the head of the stack
- *    * @line_number: line number in the Monty byte code file
- *     */
+ * sub - subtracts the top element of the stack from the second top element
+ * @stack: double pointer to the head of the stack
+ * @line_number: line number in the Monty byte code file
+ */
 void sub(stack_t **stack, unsigned int line_number)
 {
 	if (*stack == NULL || (*stack)->next == NULL)

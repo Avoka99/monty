@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- *  * push - pushes an element to the stack
- *   * @stack: double pointer to the head of the stack
- *    * @value: value to push onto the stack
- *     * @line_number: line number in the Monty byte code file
- *      */
+ * push - pushes an element to the stack
+ * @stack: double pointer to the head of the stack
+ * @value: value to push onto the stack
+ * @line_number: line number in the Monty byte code file
+ */
 void push(stack_t **stack, int value, unsigned int line_number)
 {
 	stack_t *new_node;

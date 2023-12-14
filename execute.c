@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- *  * execute_instruction - parse and execute Monty instructions
- *   * @instruction: instruction string
- *    * @stack: double pointer to the head of the stack
- *     * @line_number: line number in the Monty byte code file
- *      */
+ * execute - parse and execute Monty instructions
+ * @instruction: instruction string
+ * @stack: double pointer to the head of the stack
+ * @line_number: line number in the Monty byte code file
+ */
 void execute(char *instruction, stack_t **stack, unsigned int line_number)
 {
 	char *opcode, *arg;
@@ -98,23 +98,23 @@ void execute(char *instruction, stack_t **stack, unsigned int line_number)
 }
 
 /**
- *  * is_numeric - check if a string is a numeric value
- *   * @str: string to check
- *    * Return: 1 if numeric, 0 otherwise
- *     */
+ * is_numeric - check if a string is a numeric value
+ * @str: string to check
+ * Return: 1 if numeric, 0 otherwise
+ */
 int is_numeric(char *str)
 {
 	int i = 0;
 
 	if (!str)
-		return 0;
+		return (0);
 
 	while (str[i])
 	{
 		if (!isdigit(str[i]) && str[i] != '-' && str[i] != '+')
-			return 0;
+			return (0);
 		i++;
 	}
 
-	return 1;
+	return (1);
 }

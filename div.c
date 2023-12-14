@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *  * div_op - divides the second top element of the stack by the top element
- *   * @stack: double pointer to the head of the stack
- *    * @line_number: line number in the Monty byte code file
- *     */
+ * div_op - divides the second top element of the stack by the top element
+ * @stack: double pointer to the head of the stack
+ * @line_number: line number in the Monty byte code file
+ */
 void div_op(stack_t **stack, unsigned int line_number)
 {
 	if (*stack == NULL || (*stack)->next == NULL)

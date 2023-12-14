@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *  * swap - swaps the top two elements of the stack
- *   * @stack: double pointer to the head of the stack
- *    * @line_number: line number in the Monty byte code file
- *     */
+ * swap - swaps the top two elements of the stack
+ * @stack: double pointer to the head of the stack
+ * @line_number: line number in the Monty byte code file
+ */
 void swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;

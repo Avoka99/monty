@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *  * rotl - rotates the stack to the top
- *   * @stack: double pointer to the head of the stack
- *    * @line_number: line number in the Monty byte code file
- *     */
+ * rotl - rotates the stack to the top
+ * @stack: double pointer to the head of the stack
+ * @line_number: line number in the Monty byte code file
+ */
 void rotl(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp, *last;
