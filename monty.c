@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	{
 		line_number++;
 		if (line && line[0] == '#')  /* Ignore lines starting with '#' */
-			return (0);
+			continue;
 
 		/* Parse and execute instructions */
 		execute(line, &stack, line_number);
