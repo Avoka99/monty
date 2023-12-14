@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	while ((read = getline(&line, &len, file)) != -1)
 	{
 		line_number++;
-		if (line[0] == '#')  /* Ignore lines starting with '#' */
+		if (line && line[0] == '#')  /* Ignore lines starting with '#' */
 			continue;
 
 		/* Parse and execute instructions */
