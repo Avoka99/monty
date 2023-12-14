@@ -31,8 +31,7 @@ int main(int argc, char *argv[])
 
 	while ((read = getline(&line, &len, file)) != -1)
 	{
-		/*line_number++;*/
-		line = strtok(argv[3], " \n\t");
+		line_number++;
 		if (line && line[0] == '#')  /* Ignore lines starting with '#' */
 			return (0);
 
