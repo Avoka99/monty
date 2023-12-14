@@ -31,9 +31,10 @@ int main(int argc, char *argv[])
 
 	while ((read = getline(&line, &len, file)) != -1)
 	{
-		line_number++;
+		/*line_number++;*/
+		line = strtok(argv[3], " \n\t");
 		if (line && line[0] == '#')  /* Ignore lines starting with '#' */
-			continue;
+			return (0);
 
 		/* Parse and execute instructions */
 		execute(line, &stack, line_number);
